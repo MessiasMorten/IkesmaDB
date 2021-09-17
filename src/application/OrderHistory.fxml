@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="600.0" maxWidth="400.0" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.OrderHistoryController">
+   <children>
+      <Text layoutX="124.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ikesma GUI" textAlignment="CENTER" wrappingWidth="152.205078125">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order history only shows orders that are complete and submitted in the order interface" textAlignment="CENTER" wrappingWidth="340.205078125" />
+      <ScrollPane layoutY="127.0" prefHeight="419.0" prefWidth="400.0">
+         <content>
+            <Accordion id="orderHistory" fx:id="orderHistory" prefHeight="724.0" prefWidth="378.0" />
+         </content>
+      </ScrollPane>
+      <Button id="btn_refresh" fx:id="btn_refresh" layoutX="213.0" layoutY="546.0" mnemonicParsing="false" onAction="#populateAccordion" prefHeight="50.0" prefWidth="175.0" text="Refresh" />
+      <Button id="btn_goback" fx:id="btn_goback" layoutX="19.0" layoutY="547.0" mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="175.0" text="&lt;-- Go back" />
+   </children>
+</AnchorPane>

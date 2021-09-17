@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="400.0" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MembershipController">
+   <children>
+      <Text layoutX="124.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ikesma GUI" textAlignment="CENTER" wrappingWidth="152.205078125">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="24.0" layoutY="62.0" prefHeight="247.0" prefWidth="342.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="125.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="197.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First name:" textAlignment="CENTER" wrappingWidth="89.205078125" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Family name:" textAlignment="CENTER" wrappingWidth="109.205078125" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Membership:" textAlignment="CENTER" wrappingWidth="115.205078125" GridPane.rowIndex="2" />
+            <Text id="text_firstname" fx:id="text_firstname" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="199.205078125" GridPane.columnIndex="1" />
+            <Text id="text_familyname" fx:id="text_familyname" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="197.205078125" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text id="text_membership" fx:id="text_membership" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="199.205078125" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text id="success" fx:id="success" strokeType="OUTSIDE" strokeWidth="0.0" text="Success:" textAlignment="CENTER" visible="false" wrappingWidth="115.205078125" GridPane.rowIndex="3" />
+            <Text id="success_text" fx:id="success_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="194.205078125" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+      <Button id="member_btn" fx:id="member_btn" layoutX="24.0" layoutY="393.0" mnemonicParsing="false" onAction="#updateMembership" prefHeight="55.0" prefWidth="342.0" text="Become a member" visible="false" />
+      <Button id="button_goback" fx:id="button_goback" layoutX="24.0" layoutY="455.0" mnemonicParsing="false" onAction="#moveToShop" prefHeight="55.0" prefWidth="342.0" text="&lt;-- Go back" />
+      <Button id="member_btn" fx:id="fetchUserInfo" layoutX="24.0" layoutY="331.0" mnemonicParsing="false" onAction="#updateUserInfo" prefHeight="55.0" prefWidth="342.0" text="Fetch user info" />
+   </children>
+</AnchorPane>

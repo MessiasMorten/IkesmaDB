@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="600.0" maxWidth="400.0" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.StoreController">
+   <children>
+      <Text layoutX="83.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ikesma GUI" textAlignment="CENTER" wrappingWidth="152.205078125">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Accordion id="storeContainer" fx:id="storeContainer" layoutX="14.0" layoutY="75.0" prefHeight="293.0" prefWidth="374.0" />
+      <Accordion id="orderContainer" fx:id="orderContainer" layoutX="13.0" layoutY="414.0" prefHeight="119.0" prefWidth="374.0" />
+      <Button id="btn_goback" fx:id="btn_goback" layoutX="14.0" layoutY="539.0" mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="182.0" text="&lt;-- Go back" />
+      <Button id="get_store_contents" fx:id="get_store_contents" layoutX="247.0" layoutY="14.0" mnemonicParsing="false" onAction="#getStoreContents" prefHeight="40.0" prefWidth="116.0" text="Refresh" />
+      <Button id="btn_submitorder" fx:id="btn_submitorder" layoutX="204.0" layoutY="539.0" mnemonicParsing="false" onAction="#submitOrder" prefHeight="47.0" prefWidth="182.0" text="Submit order">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text id="text_currentorder" fx:id="text_currentorder" layoutX="128.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Order" textAlignment="CENTER" wrappingWidth="152.205078125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
